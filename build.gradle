@@ -1,0 +1,18 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'org.pb.x12'
+version = '1.1.0'
+
+description = "x12 parser"
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+repositories {
+    maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version:'4.12'
+}
