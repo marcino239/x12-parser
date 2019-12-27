@@ -83,7 +83,7 @@ public class X12Parser implements Parser {
 
         var s = new String(buffer, StandardCharsets.US_ASCII);
         var elements = s.split("\\*");
-        if (elements.length != 17)
+        if (elements.length < 17)
             throw new FormatException();
 
         Context context = new Context();
